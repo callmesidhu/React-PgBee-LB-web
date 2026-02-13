@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 
 // --- CONFIGURATION ---
 // Paste your "Publish to Web" CSV link here.
-const GOOGLE_SHEET_URL: string = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSgzWqPstEpxBps7xVg-dSrOy_n7jUIgXLU9aflxWm0EUayjk6qFcDQ5Klhbftmw5aA2l3iElw8nwmG/pub?gid=0&single=true&output=csv'; 
+const GOOGLE_SHEET_URL = import.meta.env.VITE_GOOGLE_SHEET_URL as string;
 
 interface LeaderboardEntry {
   id: number;
